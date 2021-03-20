@@ -1,12 +1,13 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
-import styled from 'styled-components'
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
+import styled from 'styled-components';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import Login from '../Pages/Login';
 
 const NavbarWrapper = styled.div`
     overflow:hidden;
     position: fixed;
-    background-color: blue;
+    background-color: #2874f0;
     width:100%;
     top:0;
     height: 10%;
@@ -44,22 +45,24 @@ const NavbarRight = styled.div`
     }
 `
 
-class Navbar extends React.Component {
-    
-    render(){
-        return (
-            <NavbarWrapper className="wrapper">
+const Navbar = () => {
+    const [token, setToken] = useState("")
+    return (
+        <NavbarWrapper className="wrapper">
             <NavbarLeft>
                 
                     <Link to="/">
-                        <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" width="55%" />
+                        <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" width="55%" alt="logo" />
                         
                     </Link>
-                    <input/>
+                    <input placeholder="Search for products, brands and more"/>
             </NavbarLeft>
             
-            <NavbarRight className="navright" >
-            <div>My Account</div>
+            <NavbarRight className="navright">
+            {
+                token?<div>My Account</div>:<Login/>
+            } 
+                
                 <div>More</div>
                 <Link to="/cart" >
                 
@@ -67,10 +70,8 @@ class Navbar extends React.Component {
                 Cart
                 </Link>
             </NavbarRight>
-            </NavbarWrapper>
-        );
-    }
-    
+        </NavbarWrapper>
+    );
 }
 
 export default Navbar

@@ -1,0 +1,14 @@
+.root1 > * {
+    text-decoration: none;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 1%;
+    font-size: 15px;
+    
+}
+
+.heading {
+    color: grey;
+}

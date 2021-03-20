@@ -1,0 +1,18 @@
+{
+  "auth": [
+    {
+      "id": 1,
+      "email": "alok@gmail.com",
+      "password": "123"
+    }
+  ],
+  "products":[
+    {
+      "id": 1,
+      "product_name": "Screw diver set",
+      "rating": "4.5",
+      "price":"149",
+      "img":"https://rukminim1.flixcart.com/image/312/312/screwdriver/r/g/a/6036-jackly-original-imaesapqfk9qfysc.jpeg?q=70"
+    }
+  ]
+}
