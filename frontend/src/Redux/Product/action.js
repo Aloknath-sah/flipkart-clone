@@ -1,4 +1,4 @@
-import {GET_PRODUCT_REQUEST, GET_PRODUCT_SUCCESS, GET_PRODUCT_FAILURE} from './actionTypes';
+import {GET_PRODUCT_REQUEST, GET_PRODUCT_SUCCESS, GET_PRODUCT_FAILURE,ADD_TO_CART} from './actionTypes';
 import axios from 'axios'
 
 export const getProductRequest = () => ({
@@ -20,3 +20,8 @@ export const getProduct = () => dispatch => {
     .then(res => dispatch(getProductSuccess(res.data)))
     .catch(() => dispatch(getProductFailure()))
 }
+
+export const addToCart = (payload) => ({
+    type: ADD_TO_CART,
+    payload
+})

@@ -1,9 +1,11 @@
-import {GET_PRODUCT_REQUEST, GET_PRODUCT_SUCCESS, GET_PRODUCT_FAILURE} from './actionTypes';
+import {GET_PRODUCT_REQUEST, GET_PRODUCT_SUCCESS, GET_PRODUCT_FAILURE, ADD_TO_CART} from './actionTypes';
 
 const initState = {
     isLoading: false,
     isError: false,
-    product: []
+    product: [],
+    cart:[],
+    len:""
 
 }
 
@@ -26,6 +28,23 @@ export const productReducer = (state = initState, {type, payload}) => {
                 isLoading: false,
                 isError: true
             }
+        case ADD_TO_CART:
+            const productToAdd = state.product.find((item) => item.id === payload)
+            const qty = {...productToAdd, qty: 1}
+            const searchCart = state.cart.findIndex((item) => item.id === payload)
+            if(searchCart === -1){
+                return {
+                    ...state,
+                    cart: [...state.cart, qty]
+                }
+            }
+            else{
+                return {
+                    ...state,
+                    cart: state.cart.map((item, index) => index === searchCart?{...item, qty: item.qty+1}: item)
+                }
+            }
+            
         default:
             return state
     }

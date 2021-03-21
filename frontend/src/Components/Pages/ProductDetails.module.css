@@ -1,0 +1,31 @@
+.prod{
+    display: flex;
+}
+
+.tag {
+    display: flex;
+}
+
+.cart {
+    color: white;
+    background-color: #ff9800;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.buy {
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cont {
+    margin: 20px;
+}
+
+.cont1{
+    margin: 20px;
+}

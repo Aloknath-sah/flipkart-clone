@@ -1,9 +1,21 @@
 import React, {useState} from 'react';
+import {Badge, withStyles} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Login from '../Pages/Login';
 import Register from '../Pages/Register';
+import IconButton from '@material-ui/core/IconButton';
+import { useSelector } from 'react-redux';
+
+const StyledBadge = withStyles((theme) => ({
+    badge: {
+        right: -3,
+        top: 13,
+        border: `2px solid ${theme.palette.background.paper}`,
+        padding: '0 4px',
+    },
+}))(Badge);
 
 const NavbarWrapper = styled.div`
     overflow:hidden;
@@ -48,6 +60,9 @@ const NavbarRight = styled.div`
 
 const Navbar = () => {
     const [token, setToken] = useState("")
+    const cartLength = useSelector(state => state.product.cart).length
+    console.log(cartLength)
+    
     return (
         <NavbarWrapper className="wrapper">
             <NavbarLeft>
@@ -67,7 +82,11 @@ const Navbar = () => {
                 <div>More</div>
                 <Link to="/cart" >
                 
-                <ShoppingCartIcon/>
+                <IconButton aria-label="cart">
+                    <StyledBadge badgeContent={cartLength} color="secondary">
+                        <ShoppingCartIcon />
+                    </StyledBadge>
+                </IconButton>
                 Cart
                 </Link>
             </NavbarRight>
