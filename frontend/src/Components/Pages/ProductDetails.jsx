@@ -27,14 +27,14 @@ const ProductDetails = () => {
         <Navbar/>
         <div className={styles.cont}>
             <Grid container >
-                <Grid item className={styles.cont1}>
-                    <img src={prod_detail.img} />
+                <Grid item xs={12} md={6} lg={6} className={styles.cont1}>
+                    <img src={prod_detail.img} width="80%" />
                     <div className={styles.tag}>
                         <button className={styles.cart} onClick={() => handleCart(prod_detail.id)} >ADD TO CART</button>
                         <button className={styles.buy} >BUY NOW</button>
                     </div>
                 </Grid>
-                <Grid>
+                <Grid item xs={12} md={6} lg={6} >
                     <div>{prod_detail.product_name} </div>
                     <div>{prod_detail.rating} </div>
                     <div>{prod_detail.price} </div>

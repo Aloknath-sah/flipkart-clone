@@ -11,7 +11,7 @@ import { useSelector } from 'react-redux';
 const StyledBadge = withStyles((theme) => ({
     badge: {
         right: -3,
-        top: 13,
+        top: 1,
         border: `2px solid ${theme.palette.background.paper}`,
         padding: '0 4px',
     },
@@ -51,11 +51,12 @@ const NavbarRight = styled.div`
     &.navright > * {
         text-decoration: none;
         color: white;
-        padding: 0% 1% 1% 15%;
+        padding: 0% 1% 2% 15%;
     }
     &.navright > * > * {
         color: white;
     }
+    
 `
 
 const Navbar = () => {
@@ -80,15 +81,17 @@ const Navbar = () => {
                 }
                 
                 <div>More</div>
-                <Link to="/cart" >
                 
-                <IconButton aria-label="cart">
+                <Link to="/cart/cartData" >
+                
+                <IconButton aria-label="cart" style={{marginTop:"-12px"}} >
                     <StyledBadge badgeContent={cartLength} color="secondary">
                         <ShoppingCartIcon />
                     </StyledBadge>
                 </IconButton>
                 Cart
                 </Link>
+                
             </NavbarRight>
         </NavbarWrapper>
     );

@@ -2,14 +2,38 @@
     width: 250px;
     text-align: center;
     padding: 5%;
-    height: 500px;
-    margin: 4%;
+    height: 400px;
+    margin: 6%;
     
+}
+
+.main {
+    margin: 30px;
+}
+
+.card > img {
+    margin-bottom: 30px;
+}
+
+.card > * {
+    text-align: left;
+}
+
+.rating {
+    background-color: green;
+    color: white;
+    width: 18%;
+    padding-left: 5px;
 }
 
 .card:hover {
     box-shadow: 2px 2px 4px 4px rgb(177, 173, 173);
     
+}
+
+.price {
+    font-weight: bold;
+    text-align: left;
 }
 
 .name:hover{
