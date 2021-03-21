@@ -1,6 +1,8 @@
-import React from 'react';
-import { Button, makeStyles, TextField } from '@material-ui/core';
+import React, { useState } from 'react';
+import { makeStyles, TextField } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
+import {Link} from 'react-router-dom'
+import Register from './Register';
 
 function rand() {
     return Math.round(Math.random() * 20) - 10;
@@ -62,6 +64,7 @@ const Login = () => {
     // getModalStyle is not a pure function, we roll the style only on the first render
     const [modalStyle] = React.useState(getModalStyle);
     const [open, setOpen] = React.useState(false);
+    const [token, setToken] = useState("")
 
     const handleOpen = () => {
         setOpen(true);
@@ -70,6 +73,7 @@ const Login = () => {
     const handleClose = () => {
         setOpen(false);
     };
+
 
     const body = (
         <div style={modalStyle} className={classes.paper}>
@@ -82,7 +86,10 @@ const Login = () => {
                 <TextField id="standard-basic" label="Enter password" />
                 <p className={classes.font} >By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
                 <button className={classes.btn} >Login</button>
-                <div className={classes.height} >New to Flipkart? Create an account</div>
+                {
+                    token?<button className={classes.height}>New to Flipkart? Create an account</button>: <Register/>
+                }
+                
             </div>
         </div>
     );

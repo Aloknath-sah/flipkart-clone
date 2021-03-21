@@ -1,0 +1,17 @@
+.card {
+    width: 250px;
+    text-align: center;
+    padding: 5%;
+    height: 500px;
+    margin: 4%;
+    
+}
+
+.card:hover {
+    box-shadow: 2px 2px 4px 4px rgb(177, 173, 173);
+    
+}
+
+.name:hover{
+    color: rgb(28, 28, 95);
+}

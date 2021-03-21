@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Login from '../Pages/Login';
+import Register from '../Pages/Register';
 
 const NavbarWrapper = styled.div`
     overflow:hidden;
@@ -59,9 +60,9 @@ const Navbar = () => {
             </NavbarLeft>
             
             <NavbarRight className="navright">
-            {
-                token?<div>My Account</div>:<Login/>
-            } 
+                {
+                    token?<Login/>:<Register/>
+                }
                 
                 <div>More</div>
                 <Link to="/cart" >

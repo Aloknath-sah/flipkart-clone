@@ -13,6 +13,69 @@
       "rating": "4.5",
       "price":"149",
       "img":"https://rukminim1.flixcart.com/image/312/312/screwdriver/r/g/a/6036-jackly-original-imaesapqfk9qfysc.jpeg?q=70"
+    },
+    {
+      "id": 2,
+      "product_name": "football",
+      "rating": "4.0",
+      "price":"199",
+      "img":"https://rukminim1.flixcart.com/image/150/150/jyxaw7k0/ball/8/3/m/430-5-21-9-attacker-1-vectorxhx5-football-vector-x-original-imafj24h7vdswzhg.jpeg?q=70"
+    },
+    {
+      "id": 3,
+      "product_name": "poco c3",
+      "rating": "4.3",
+      "price":"8499",
+      "img":"https://rukminim1.flixcart.com/image/612/612/kfvfwy80/mobile/j/h/t/poco-c3-mzb07riin-original-imafw8qbg63kvngr.jpeg?q=70"
+    },
+    {
+      "id": 4,
+      "product_name": "realme c15",
+      "rating": "4.4",
+      "price":"10999",
+      "img":"https://rukminim1.flixcart.com/image/612/612/kdxfc7k0/mobile/j/6/2/realme-c15-rmx2180-original-imafupu9wutkbf2k.jpeg?q=70"
+    },
+    {
+      "id": 5,
+      "product_name": "Fastrack",
+      "rating": "4.4",
+      "price":"1199",
+      "img":"https://rukminim1.flixcart.com/image/496/595/jyxaw7k0/watch/8/r/z/fs4552-fossil-original-imafjfw4p4gspumf.jpeg?q=50"
+    },
+    {
+      "id": 6,
+      "product_name": "Sonata",
+      "rating": "4.4",
+      "price":"899",
+      "img":"https://rukminim1.flixcart.com/image/496/595/k0o69ow0/watch/f/g/c/77106sm04-sonata-original-imafkf7uhcfvndcv.jpeg?q=50"
+    },
+    {
+      "id": 7,
+      "product_name": "Hoppup",
+      "rating": "4.0",
+      "price":"629",
+      "img":"https://rukminim1.flixcart.com/image/612/612/kidgnm80-0/headphone/q/a/e/volt-with-15-hours-play-time-hoppup-original-imafy6mnu3f7pccz.jpeg?q=70"
+    },
+    {
+      "id": 8,
+      "product_name": "Zebronics",
+      "rating": "3.8",
+      "price":"129",
+      "img":"https://rukminim1.flixcart.com/image/612/612/khmbafk0-0/headphone/b/a/p/zeb-bro-zebronics-original-imafxhhsq9ykgpnx.jpeg?q=70"
+    },
+    {
+      "id": 9,
+      "product_name": "Butterfly",
+      "rating": "3.8",
+      "price":"599",
+      "img":"https://rukminim1.flixcart.com/image/612/612/jy90eq80/pressure-cooker/g/h/t/8906022174823-butterfly-original-imafggzvb2mncged.jpeg?q=70"
+    },
+    {
+      "id": 10,
+      "product_name": "Piegon",
+      "rating": "3.8",
+      "price":"799",
+      "img":"https://rukminim1.flixcart.com/image/612/612/klphn680/pressure-cooker/k/n/m/yes-12653-pigeon-original-imagyrwqgur5qyhg.jpeg?q=70"
     }
   ]
 }
