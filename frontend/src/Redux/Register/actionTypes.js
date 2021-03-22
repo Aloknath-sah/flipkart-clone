@@ -1,3 +1,9 @@
-export const regRequest = "REGREQUEST"
-export const regSuccess = "REGSUCCESS"
-export const regFailure = "REGFAILURE"
+export const REGREQUEST = "REGREQUEST"
+export const REGSUCCESS = "REGSUCCESS"
+export const REGFAILURE = "REGFAILURE"
+
+export const GET_USER_REQUEST = "GET_USER_REQUEST"
+export const GET_USER_SUCCESS = "GET_USER_SUCCESS"
+export const GET_USER_FAILURE = "GET_USER_FAILURE"
+
+export const IS_AUTH = "IS_AUTH"

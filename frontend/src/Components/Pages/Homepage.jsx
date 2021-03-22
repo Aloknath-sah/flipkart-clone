@@ -6,12 +6,14 @@ import { Grid } from '@material-ui/core';
 import {useDispatch, useSelector} from 'react-redux';
 import { getProduct } from '../../Redux/Product/action';
 import {ProductCard} from '../Pages/ProductCard';
+import { getUserData } from '../../Redux/Register/action';
 
 const Homepage = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(getProduct())
+        dispatch(getUserData())
     }, []);
 
     const product = useSelector(state => state.product.product)

@@ -60,9 +60,12 @@ const NavbarRight = styled.div`
 `
 
 const Navbar = () => {
-    const [token, setToken] = useState("")
+    const isRegister = useSelector(state => state.register.isRegister)
+    console.log(isRegister)
     const cartLength = useSelector(state => state.product.cart).length
     console.log(cartLength)
+    const isAuthVal = useSelector(state => state.register.isAuthVal)
+    console.log(isAuthVal)
     
     return (
         <NavbarWrapper className="wrapper">
@@ -77,7 +80,7 @@ const Navbar = () => {
             
             <NavbarRight className="navright">
                 {
-                    token?<Login/>:<Register/>
+                    isAuthVal?<div>my account</div>: isRegister?<Login/>:<Register/>
                 }
                 
                 <div>More</div>

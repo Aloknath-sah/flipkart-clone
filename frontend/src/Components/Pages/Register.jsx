@@ -3,6 +3,7 @@ import { makeStyles, TextField } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import {Link} from 'react-router-dom'
 import {useDispatch} from 'react-redux';
+import { registerData } from '../../Redux/Register/action';
 
 function rand() {
     return Math.round(Math.random() * 20) - 10;
@@ -25,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
         width: '50%',
         display:"flex",
         backgroundColor:"white",
-        margin:"5% 0% 0 -10%"
+        margin:"0% 0% 0 5%"
     },
     login:{
         backgroundColor:"#2874f0",
@@ -45,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
         border:"none",
         width:"100%",
         padding:"3%",
+        marginBottom:"55%",
         color:"white"
     },
     height:{
@@ -64,7 +66,6 @@ const Register = () => {
     // getModalStyle is not a pure function, we roll the style only on the first render
     const [modalStyle] = React.useState(getModalStyle);
     const [open, setOpen] = React.useState(false);
-    const [token, setToken] = useState("")
 
     const handleOpen = () => {
         setOpen(true);
@@ -76,14 +77,16 @@ const Register = () => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    // const dispatch = useDispatch()
-    // const handleRegister = () => {
-    //     localStorage.setItem(email)
-    //     dispatch(registerData({
-    //         email,
-    //         password
-    //     }))
-    // }
+    const dispatch = useDispatch()
+    
+    const handleRegister = () => {
+        
+        dispatch(registerData({
+            email:email,
+            password:password
+        }))
+        
+    }
 
 
     const body = (
@@ -96,7 +99,7 @@ const Register = () => {
                 <TextField id="standard-basic" value={email} onChange={(e) => setEmail(e.target.value)} label="Enter Email/Mobile number" />
                 <TextField id="standard-basic" value={password} onChange={(e)=> setPassword(e.target.value)} label="Enter password" />
                 <p className={classes.font} >By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
-                <button className={classes.btn}  >continue</button>
+                <button className={classes.btn} onClick={handleRegister}  >continue</button>
                 
             </div>
         </div>
@@ -104,7 +107,7 @@ const Register = () => {
     return (
         <div>
             <button type="button" onClick={handleOpen} style={{color:"#2874f0", border:"none", width:"200%"}}>
-                Login
+                Register
             </button>
             <Modal
                 open={open}

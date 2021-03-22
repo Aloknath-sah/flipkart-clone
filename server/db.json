@@ -4,178 +4,188 @@
       "id": 1,
       "email": "alok@gmail.com",
       "password": "123"
+    },
+    {
+      "email": "alok",
+      "password": "sah",
+      "id": 2
+    },
+    {
+      "email": "adit",
+      "password": "kumar",
+      "id": 3
     }
   ],
-  "products":[
+  "products": [
     {
       "id": 1,
       "product_name": "cello VENICE FRIDGE WATER BOTTLES 1000 ml Bottle",
       "rating": "4.5",
-      "price":"149",
+      "price": "149",
       "original_price": "500",
-      "img":"https://rukminim1.flixcart.com/image/612/612/k0cqqvk0/bottle/4/v/c/1000-venice-fridge-water-bottles-120-cello-original-imafk5tysrejtyhj.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/k0cqqvk0/bottle/4/v/c/1000-venice-fridge-water-bottles-120-cello-original-imafk5tysrejtyhj.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     },
     {
       "id": 2,
       "product_name": "MILTON Executive Lunch 3 Containers Lunch Box",
       "rating": "4.0",
-      "price":"199",
+      "price": "199",
       "original_price": "500",
-      "img":"https://rukminim1.flixcart.com/image/612/612/jyxaw7k0/ball/8/3/m/430-5-21-9-attacker-1-vectorxhx5-football-vector-x-original-imafj24h7vdswzhg.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/jyxaw7k0/ball/8/3/m/430-5-21-9-attacker-1-vectorxhx5-football-vector-x-original-imafj24h7vdswzhg.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     },
     {
       "id": 3,
       "product_name": "Flipkart SmartBuy Classic Fridge Bottle - 1000ml - Plas...",
       "rating": "4.3",
-      "price":"651",
+      "price": "651",
       "original_price": "1000",
-      "img":"https://rukminim1.flixcart.com/image/612/612/k0r15e80/bottle/3/c/u/1000-bottle-pack-of-6-btbasicbp6-flipkart-smartbuy-original-imafkh98dhzgeyry.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/k0r15e80/bottle/3/c/u/1000-bottle-pack-of-6-btbasicbp6-flipkart-smartbuy-original-imafkh98dhzgeyry.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     },
     {
       "id": 4,
       "product_name": "MILTON Executive Lunch 3 Containers Lunch Box",
       "rating": "4.4",
-      "price":"299",
+      "price": "299",
       "original_price": "500",
-      "img":"https://rukminim1.flixcart.com/image/612/612/jx257680/lunch-box/y/c/k/executive-lunch-milton-3-original-imafhkwwfdxvdgeg.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/jx257680/lunch-box/y/c/k/executive-lunch-milton-3-original-imafhkwwfdxvdgeg.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     },
     {
       "id": 5,
       "product_name": "MILTON Executive 3 Containers Lunch Box",
       "rating": "4.4",
-      "price":"499",
+      "price": "499",
       "original_price": "1000",
-      "img":"https://rukminim1.flixcart.com/image/612/612/k0flmkw0/lunch-box/u/8/j/executive-milton-3-original-imafk8faruzxwrxw.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/k0flmkw0/lunch-box/u/8/j/executive-milton-3-original-imafk8faruzxwrxw.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     },
     {
       "id": 6,
       "product_name": "WONDERCHEF Power Induction Bottom Cookware Set",
       "rating": "4.4",
-      "price":"1249",
+      "price": "1249",
       "original_price": "1500",
-      "img":"https://rukminim1.flixcart.com/image/612/612/kj0bp8w0/cookware-set/j/g/d/power-wonderchef-original-imafyzbgctdcz3dh.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/kj0bp8w0/cookware-set/j/g/d/power-wonderchef-original-imafyzbgctdcz3dh.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     },
     {
       "id": 7,
       "product_name": "HAWKINS CONTURA BLACK 5 L Pressure Cooker",
       "rating": "4.0",
-      "price":"1799",
+      "price": "1799",
       "original_price": "2000",
-      "img":"https://rukminim1.flixcart.com/image/612/612/kdj4xow0/pressure-cooker/k/a/c/cb50-hawkins-original-imafuetazwkabtq2.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/kdj4xow0/pressure-cooker/k/a/c/cb50-hawkins-original-imafuetazwkabtq2.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     },
     {
       "id": 8,
       "product_name": "Signoraware Director Glass 3 Containers Lunch Box",
       "rating": "3.8",
-      "price":"641",
+      "price": "641",
       "original_price": "800",
-      "img":"https://rukminim1.flixcart.com/image/612/612/jaldz0w0/lunch-box/y/e/e/director-glass-signoraware-3-original-imafy4scsubfpsre.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/jaldz0w0/lunch-box/y/e/e/director-glass-signoraware-3-original-imafy4scsubfpsre.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     },
     {
       "id": 9,
       "product_name": "Butterfly Friendly 5 L Pressure Cooker",
       "rating": "3.8",
-      "price":"599",
+      "price": "599",
       "original_price": "800",
-      "img":"https://rukminim1.flixcart.com/image/612/612/jy90eq80/pressure-cooker/g/h/t/8906022174823-butterfly-original-imafggzvb2mncged.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/jy90eq80/pressure-cooker/g/h/t/8906022174823-butterfly-original-imafggzvb2mncged.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     },
     {
       "id": 10,
       "product_name": "HAWKINS Stainless Steel HSS3T 3 L Induction Bottom Pres...",
       "rating": "3.8",
-      "price":"2206",
+      "price": "2206",
       "original_price": "2500",
-      "img":"https://rukminim1.flixcart.com/image/612/612/pressure-cooker/z/b/z/b33-hawkins-original-imadvze72rndzhq6.jpeg?q=70",
-      "logo":"https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+      "img": "https://rukminim1.flixcart.com/image/612/612/pressure-cooker/z/b/z/b33-hawkins-original-imadvze72rndzhq6.jpeg?q=70",
+      "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
       "offers": [
-      {
-          
-          "offers1":"Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
-          "offers2":"Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
-          "offers3":"Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
-          "offers4":"Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
-        }]
+        {
+          "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
+          "offers2": "Combo OfferBuy 3-4 items save 5%;Buy 5 or more save 10%See all productsT&C",
+          "offers3": "Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+          "offers4": "Bank Offer₹20 Off on first prepaid transaction using UPI payments, minimum order value ₹750/-T&C"
+        }
+      ]
     }
   ]
 }

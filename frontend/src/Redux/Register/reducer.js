@@ -1,7 +1,11 @@
+import {REGREQUEST, REGSUCCESS, REGFAILURE, GET_USER_REQUEST, GET_USER_SUCCESS, GET_USER_FAILURE, IS_AUTH} from './actionTypes'
+
 const initState = {
     isLoading: false,
     isError: false,
-    data: ""
+    isRegister: false,
+    data: [],
+    isAuthVal: false
 }
 
 export const registerReducer = (state = initState, {type, payload}) => {
@@ -15,13 +19,35 @@ export const registerReducer = (state = initState, {type, payload}) => {
             return {
                 ...state,
                 isLoading: false,
-                data: payload
+                isRegister: true
             }
         case REGFAILURE:
             return {
                 ...state,
                 isLoading: true
             }
+            case GET_USER_REQUEST:
+                return {
+                    ...state,
+                    isLoading: true
+                }
+            case GET_USER_SUCCESS: 
+                return {
+                    ...state,
+                    isLoading: false,
+                    data: payload
+                }
+            case GET_USER_FAILURE:
+                return {
+                    ...state,
+                    isLoading: true
+                }
+            case IS_AUTH:
+                console.log(payload)
+                return {
+                    ...state,
+                    isAuthVal: payload
+                }
         default:
             return state
     }
