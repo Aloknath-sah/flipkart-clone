@@ -13,6 +13,7 @@ export const regFailure = () => ({
     type: REGFAILURE
 })
 
+//axios call to post the email and password of the new user.
 export const registerData = (payload) => dispatch => {
     console.log(payload)
     dispatch(regRequest())
@@ -44,6 +45,7 @@ export const getUserFailure = () => ({
     type: GET_USER_FAILURE
 })
 
+//axios call to get all the registered users data and send as a payload
 export const getUserData = () => dispatch => {
     dispatch(getUserRequest())
     axios({
@@ -54,6 +56,7 @@ export const getUserData = () => dispatch => {
     .then(err => dispatch(getUserFailure(err)))
 
 }
+
 
 export const isAuth = (payload) => ({
     type:IS_AUTH,

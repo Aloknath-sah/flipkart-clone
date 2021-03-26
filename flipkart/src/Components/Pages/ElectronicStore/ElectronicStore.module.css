@@ -1,0 +1,140 @@
+.sort{
+    display: flex;
+    padding: 15px;
+}
+
+.sort > button {
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.sort > button:hover {
+    border-bottom: 1px solid rgb(0, 162, 255);
+    color: rgb(0, 162, 255);
+}
+
+.sort > div {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.prod {
+    display: flex;
+}
+
+.prod > img {
+    padding: 20px;
+}
+
+.filter{
+    padding: 20px;
+    font-weight: bold;
+}
+
+.discount {
+    display: flex;
+
+}
+
+.discount_off{
+    color: green;
+    margin-left: 10px;
+}
+
+.item_price {
+    padding-left: 10%;
+}
+
+.prod_name {
+    font-weight: bold;
+}
+
+.prod_name:hover{
+    color: rgb(0, 162, 255);
+}
+
+.rating {
+    width: 15%;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.checkbox {
+    display: flex;
+    margin-left: 10px;
+}
+
+.checkbox > * {
+    margin-left: 10px;
+}
+
+.checkbox_rating {
+    display: flex;
+    margin-left: 10px;
+}
+
+.checkbox_rating > * {
+    
+    margin-left: 10px;
+}
+
+.ram {
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.shadow {
+    padding: 10px;
+    box-shadow: 2px 2px 3px 3px rgb(177, 173, 173);
+    height: auto;
+}
+
+.innerdiv{
+    display: flex;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .innerdiv {
+        flex-direction: column;
+    }
+
+    .innerdiv > * {
+        text-align: center;
+    }
+
+    .shadow {
+        display: none;
+    }
+}
+
+
+.card {
+    padding: 2%;
+    margin: 1%;
+}
+
+.margin{
+    margin-top: 6%;
+}
+
+.price {
+    display: flex;
+}
+
+.price > div:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.price > div:nth-child(2){
+    font-size: 15px;
+    text-decoration: line-through;
+    color: grey;
+    margin-left: 5%;
+}

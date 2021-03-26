@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #2874f0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.header > * {
+    text-decoration: none;
+    color: white;
+}
+
+.header > img {
+    width: 25%;
+}
+
+.header > * > img {
+    width: 65%;
+}
+
+.header > * >div {
+    margin-left: 20px;
+}
+
+.header > *:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .header > img {
+        display: none;
+    }
+    .header > * > img {
+        width: 25%;
+    }
+    .header > * >div {
+        margin-left: 1%;
+    }
+}

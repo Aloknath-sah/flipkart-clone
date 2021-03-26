@@ -16,6 +16,7 @@ export const productReducer = (state = initState, {type, payload}) => {
                 ...state,
                 isLoading: true
             }
+        //filling the empty product array in state with the payload we are getting from action
         case GET_PRODUCT_SUCCESS:
             return {
                 ...state,
@@ -28,6 +29,7 @@ export const productReducer = (state = initState, {type, payload}) => {
                 isLoading: false,
                 isError: true
             }
+        //adding the product by finding it and storing it in cart array
         case ADD_TO_CART:
             const productToAdd = state.product.find((item) => item.id === payload)
             const qty = {...productToAdd, qty: 1}

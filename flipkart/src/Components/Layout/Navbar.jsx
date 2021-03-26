@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Badge, withStyles} from '@material-ui/core';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import Login from '../Pages/Login';
-import Register from '../Pages/Register';
+import Login from '../Pages/Login/Login';
+import Register from '../Pages/Register/Register';
 import IconButton from '@material-ui/core/IconButton';
 import { useSelector } from 'react-redux';
 
@@ -28,6 +28,9 @@ const NavbarWrapper = styled.div`
     &.wrapper > *{
         flex:1;
     }
+    @media (max-width: 600px) {
+        height: 5%;
+    }
 `
 
 const NavbarLeft = styled.div`
@@ -40,6 +43,14 @@ const NavbarLeft = styled.div`
     }
     input{
         width: 100%
+    }
+    @media (max-width: 600px) {
+        margin-left: 0%;
+        input{
+            width: 100%;
+            font-size: 10px;
+            height: 45%;
+        }
     }
 `
 
@@ -56,7 +67,12 @@ const NavbarRight = styled.div`
     &.navright > * > * {
         color: white;
     }
-    
+    @media (max-width: 600px) {
+        padding: 0%;
+        &.navright > * {
+            padding: 0%;
+        }
+    }
 `
 
 const Navbar = () => {
@@ -70,12 +86,10 @@ const Navbar = () => {
     return (
         <NavbarWrapper className="wrapper">
             <NavbarLeft>
-                
-                    <Link to="/">
-                        <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" width="55%" alt="logo" />
-                        
-                    </Link>
-                    <input placeholder="Search for products, brands and more"/>
+                <Link to="/">
+                    <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" width="55%" alt="logo" />
+                </Link>
+                <input placeholder="Search for products, brands and more"/>
             </NavbarLeft>
             
             <NavbarRight className="navright">

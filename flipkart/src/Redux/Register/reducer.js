@@ -10,6 +10,7 @@ const initState = {
 
 export const registerReducer = (state = initState, {type, payload}) => {
     switch(type){
+        
         case REGREQUEST:
             return {
                 ...state,
@@ -26,24 +27,24 @@ export const registerReducer = (state = initState, {type, payload}) => {
                 ...state,
                 isLoading: true
             }
-            case GET_USER_REQUEST:
+        case GET_USER_REQUEST:
                 return {
                     ...state,
                     isLoading: true
                 }
-            case GET_USER_SUCCESS: 
+        //storing the registered data in data array
+        case GET_USER_SUCCESS: 
                 return {
                     ...state,
                     isLoading: false,
                     data: payload
                 }
-            case GET_USER_FAILURE:
+        case GET_USER_FAILURE:
                 return {
                     ...state,
                     isLoading: true
                 }
-            case IS_AUTH:
-                console.log(payload)
+        case IS_AUTH:
                 return {
                     ...state,
                     isAuthVal: payload

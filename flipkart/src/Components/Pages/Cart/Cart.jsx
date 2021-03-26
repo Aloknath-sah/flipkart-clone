@@ -2,7 +2,7 @@ import { Grid } from '@material-ui/core';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import Navbar from '../Layout/Navbar';
+import Navbar from '../../Layout/Navbar';
 import styles from './Cart.module.css'
 
 const Cart = () => {
@@ -16,9 +16,9 @@ const Cart = () => {
     return (
         <div>
         <Navbar/>
-        {cartData.length == 0 ?(
+        {cartData.length === 0 ?(
             <div style={{margin:"15% 15% 0 35%"}}>
-                <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" width="300px" />
+                <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" width="300px" alt="logo" />
                 <div className={styles.mid} >
                 <h2 >your cart is empty</h2>
                 <button className={styles.shop} onClick={handleShop} >shop now</button>
@@ -27,13 +27,11 @@ const Cart = () => {
         <Grid container className={styles.main} >
             <Grid item lg={6} className={styles.shadow} spacing={3} >
                 <div className={styles.mycart}>myCart</div>
-                
-
                 {
                     cartData.map((item) => (
                         <div className={styles.flex}>
                             <div>
-                                <img src={item.img} width="150px" />
+                                <img src={item.img} width="150px" alt="product_image" />
                                 <div className={styles.qty} >
                                     <button>-</button> {item.qty} <button>+</button>
                                 </div>

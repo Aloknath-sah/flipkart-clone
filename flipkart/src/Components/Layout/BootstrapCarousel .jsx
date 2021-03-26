@@ -4,14 +4,13 @@ export class BootstrapCarousel extends Component {
     render() {  
         return (  
             <div>  
-                 
-                    <Carousel>  
+                <Carousel>  
                     <Carousel.Item style={{'height':"300px"}} >  
                     <img style={{'height':"300px"}}  
                     className="d-block w-100"  
                     src="https://i.pinimg.com/originals/37/e9/e0/37e9e012b6e0f2a3edf47438f066958d.jpg" alt=""/>
                         
-                    </Carousel.Item  >  
+                    </Carousel.Item>  
                     <Carousel.Item style={{'height':"300px"}}>  
                         <img style={{'height':"300px"}}  
                             className="d-block w-100"  
@@ -22,8 +21,7 @@ export class BootstrapCarousel extends Component {
                         className="d-block w-100"  
                         src="https://i.gadgets360cdn.com/large/flipkart_main_1576927335243.jpg" alt="" />
                     </Carousel.Item>  
-                    </Carousel>  
-                
+                </Carousel>  
             </div>  
         )  
     }  
