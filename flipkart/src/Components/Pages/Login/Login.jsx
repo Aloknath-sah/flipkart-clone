@@ -79,8 +79,6 @@ const Login = () => {
 
     const dispatch = useDispatch()
     const handleLogin = (userData) => {
-        console.log(email)
-        console.log(userData)
         const checkUser = userData.find((item) => item.email === email)
         if(checkUser){
             console.log(checkUser)
@@ -91,7 +89,6 @@ const Login = () => {
             dispatch(isAuth(false))
         }
     }
-
 
     const body = (
         <div style={modalStyle} className={classes.paper}>

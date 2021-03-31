@@ -77,12 +77,9 @@ const NavbarRight = styled.div`
 
 const Navbar = () => {
     const isRegister = useSelector(state => state.register.isRegister)
-    console.log(isRegister)
     const cartLength = useSelector(state => state.product.cart).length
-    console.log(cartLength)
     const isAuthVal = useSelector(state => state.register.isAuthVal)
-    console.log(isAuthVal)
-    
+
     return (
         <NavbarWrapper className="wrapper">
             <NavbarLeft>

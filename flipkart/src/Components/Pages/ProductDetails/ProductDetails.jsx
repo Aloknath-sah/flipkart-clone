@@ -6,6 +6,17 @@ import { Grid } from '@material-ui/core';
 import { addToCart, getProduct } from '../../../Redux/Product/action';
 import Navbar from '../../Layout/Navbar';
 import Footer from '../../Layout/Footer/Footer';
+import Alert from '@material-ui/lab/Alert';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        width: '100%',
+        '& > * + *': {
+            marginTop: theme.spacing(2),
+        },
+    },
+}));
 
 const ProductDetails = () => {
     const dispatch = useDispatch()
@@ -19,17 +30,22 @@ const ProductDetails = () => {
     console.log(product)
     const prod_detail = product.find((item) => item.id == params.id)
     console.log(prod_detail)
+    const isAuthVal = useSelector(state => state.register.isAuthVal)
 
     const handleCart = (id) => {
         dispatch(addToCart(id))
-        history.push("/cart/cartData")
+        if(isAuthVal){
+            history.push("/cart/cartData")
+        }
     }
 
     const cart = useSelector(state => state.product.cart)
     console.log(cart)
+    const classes = useStyles()
     return (
         <>
         <Navbar/>
+        
         <div className={styles.cont}>
             <Grid container >
                 <Grid item xs={12} md={6} lg={6} >
@@ -71,6 +87,9 @@ const ProductDetails = () => {
                 </Grid>
             </Grid>
         </div>
+        {
+            isAuthVal? <div></div> : <Alert severity="error">please login to view items to cart!</Alert>
+        } 
         <Footer/>
         </>
     );

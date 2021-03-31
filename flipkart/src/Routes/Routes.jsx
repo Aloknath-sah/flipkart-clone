@@ -17,7 +17,7 @@ const Routes = () => {
                 <Route path="/login" exact render={()=> <Login/>} />
                 <Route path="/" exact render={()=> <Homepage/>} />
                 <Route path="/:id" exact render={()=> <ProductDetails/>} />
-                <Route path="/cart/cartData" exact render={() => <Cart/>} />
+                <PrivateRoute path="/cart/cartData" exact component={Cart} />
                 <Route path="/mobile/mobile-phones-store" exact render={() => <MobileStore/>} />
                 <Route path="/electronic/electronic-store" exact render={() => <ElectronicStore/>} />
                 <Route path="/fashion/fashion-store" exact render={() => <FashionStore/>} />

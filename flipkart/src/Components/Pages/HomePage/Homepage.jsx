@@ -18,7 +18,6 @@ const Homepage = () => {
     }, []);
 
     const product = useSelector(state => state.product.product)
-    console.log(product)
     return (
         <>
         <Navbar/>
