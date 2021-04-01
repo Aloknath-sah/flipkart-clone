@@ -3,6 +3,7 @@ import { makeStyles, TextField } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import {useDispatch} from 'react-redux';
 import { registerData } from '../../../Redux/Register/action';
+import styles from './Register.module.css'
 
 function rand() {
     return Math.round(Math.random() * 20) - 10;
@@ -91,7 +92,6 @@ const Register = () => {
         }
     }
 
-
     const body = (
         <div style={modalStyle} className={classes.paper}>
             <div className={classes.login}>
@@ -108,8 +108,8 @@ const Register = () => {
         </div>
     );
     return (
-        <div>
-            <button type="button" onClick={handleOpen} style={{color:"#2874f0", border:"none", width:"200%"}}>
+        <div >
+            <button type="button" onClick={handleOpen} style={{color:"#2874f0"}} className={styles.register} >
                 Register
             </button>
             <Modal

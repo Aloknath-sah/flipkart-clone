@@ -21,7 +21,7 @@ const Homepage = () => {
     return (
         <>
         <Navbar/>
-        <div style={{marginTop:"6%"}}>
+        <div className={styles.top_margin}>
             <div className={styles.header}>
                 <img src="https://rukminim1.flixcart.com/www/816/816/promos/23/03/2021/284eae1b-53c0-4648-8e75-3fc127e3a9cc.png?q=90" alt="sale" />
                 
@@ -42,7 +42,7 @@ const Homepage = () => {
                 </Link>
             </div>
             <BootstrapCarousel></BootstrapCarousel>
-            <Grid container style={{padding: "2%"}}>
+            <Grid container style={{padding: "3%"}}>
                 {
                     product.filter((items)=> items.category === "equipment").map((item) => <ProductCard {...item} key={item.id} />)
                 }

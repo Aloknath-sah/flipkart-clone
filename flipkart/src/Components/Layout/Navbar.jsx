@@ -26,11 +26,28 @@ const NavbarWrapper = styled.div`
     top:0;
     height: 10%;
     display:flex;
-    &.wrapper > *{
+    &.wrapper > * {
         flex:1;
     }
-    @media (max-width: 600px) {
+
+    @media screen and (min-width: 300px) {
         height: 5%;
+    }
+
+    @media screen and (min-width: 480px) {
+        height: 5%;
+    }
+
+    @media screen and (min-width: 600px) {
+        height: 5%;
+    }
+
+    @media screen and (min-width: 930px) {
+        height: 6%;
+    }
+
+    @media screen and (min-width: 1025px) {
+        height: 10%;
     }
 `
 
@@ -45,7 +62,32 @@ const NavbarLeft = styled.div`
     input{
         width: 100%
     }
+    @media screen and (min-width: 480px) {
+        margin-left: 0%;
+        input{
+            width: 100%;
+            font-size: 10px;
+            height: 95%;
+        }
+    }
+
     @media (max-width: 600px) {
+        margin-left: 0%;
+        input{
+            width: 100%;
+            font-size: 10px;
+            height: 65%;
+        }
+    }
+    @media (max-width: 930px) {
+        margin-left: 0%;
+        input{
+            width: 100%;
+            font-size: 10px;
+            height: 85%;
+        }
+    }
+    @media (max-width: 1025px) {
         margin-left: 0%;
         input{
             width: 100%;
@@ -56,7 +98,6 @@ const NavbarLeft = styled.div`
 `
 
 const NavbarRight = styled.div`
-    
     padding: 2%;
     display: flex;
     
@@ -67,12 +108,6 @@ const NavbarRight = styled.div`
     }
     &.navright > * > * {
         color: white;
-    }
-    @media (max-width: 600px) {
-        padding: 0%;
-        &.navright > * {
-            padding: 0%;
-        }
     }
 `
 
@@ -94,10 +129,7 @@ const Navbar = () => {
             </NavbarLeft>
             
             <NavbarRight className="navright">
-                {/* {
-                    isAuthVal?<div>my account</div>: isRegister?<Login/>:<Register/>
-                } */}
-                <div >
+                <div>
                 {
                     isAuthVal?<div>hello {userName}</div>:<Login/>
                 }
@@ -108,14 +140,13 @@ const Navbar = () => {
                 
                 <div>More</div>
                 
-                <Link to="/cart/cartData" >
-                
+                <Link to="/cart/cartData">
                 <IconButton aria-label="cart" style={{marginTop:"-12px"}} >
                     <StyledBadge badgeContent={cartLength} color="secondary">
                         <ShoppingCartIcon />
                     </StyledBadge>
                 </IconButton>
-                Cart
+                    Cart
                 </Link>
                 
             </NavbarRight>
