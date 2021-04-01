@@ -76,15 +76,19 @@ const Register = () => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [message, setMessage] = useState("")
     const dispatch = useDispatch()
     
     const handleRegister = () => {
-        
-        dispatch(registerData({
-            email:email,
-            password:password
-        }))
-        
+        if(email && password){
+            dispatch(registerData({
+                email:email,
+                password:password
+            }))
+        }
+        else{
+            setMessage("please enter all the required fields")
+        }
     }
 
 
@@ -96,10 +100,10 @@ const Register = () => {
             </div>
             <div className={classes.text}>
                 <TextField id="standard-basic" value={email} onChange={(e) => setEmail(e.target.value)} label="Enter Email/Mobile number" />
-                <TextField id="standard-basic" value={password} onChange={(e)=> setPassword(e.target.value)} label="Enter password" />
+                <TextField id="standard-basic" value={password} onChange={(e)=> setPassword(e.target.value)} label="Enter password" required />
                 <p className={classes.font} >By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
                 <button className={classes.btn} onClick={handleRegister}  >continue</button>
-                
+                <div style={{color:"red"}}>{message} </div>
             </div>
         </div>
     );

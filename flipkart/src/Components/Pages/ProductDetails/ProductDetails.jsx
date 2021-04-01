@@ -45,9 +45,8 @@ const ProductDetails = () => {
     return (
         <>
         <Navbar/>
-        
         <div className={styles.cont}>
-            <Grid container >
+            <Grid container>
                 <Grid item xs={12} md={6} lg={6} >
                     <img className={styles.zoom} src={prod_detail.img} width="80%" alt="details" />
                     <div className={styles.tag}>
@@ -80,7 +79,6 @@ const ProductDetails = () => {
                                     <img src={prod_detail.logo} alt="logo" width="20px" height="25px" />
                                     <div>{item.offers4} </div>
                                 </div>
-                                
                             </div>
                         ))
                     }

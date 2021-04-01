@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { makeStyles, TextField } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import { useDispatch, useSelector } from 'react-redux';
-import { isAuth } from '../../../Redux/Register/action';
+import { isAuth, loginUser } from '../../../Redux/Register/action';
 
 function rand() {
     return Math.round(Math.random() * 20) - 10;
@@ -67,6 +67,7 @@ const Login = () => {
     const [open, setOpen] = React.useState(false);
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [message, setMessage] = useState("")
     const userData = useSelector(state => state.register.data)
 
     const handleOpen = () => {
@@ -83,10 +84,11 @@ const Login = () => {
         if(checkUser){
             console.log(checkUser)
             dispatch(isAuth(true))
+            dispatch(loginUser(email))
         }
         else{
-            console.log("invalid User")
             dispatch(isAuth(false))
+            setMessage("invalid User")
         }
     }
 
@@ -103,7 +105,7 @@ const Login = () => {
 
                 <p className={classes.font} >By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
                 <button className={classes.btn} onClick={() => handleLogin(userData)}>Login</button>
-                
+                <div style={{color:"red"}}>{message} </div>
             </div>
         </div>
     );

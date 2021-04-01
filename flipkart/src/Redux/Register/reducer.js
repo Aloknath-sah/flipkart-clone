@@ -1,11 +1,12 @@
-import {REGREQUEST, REGSUCCESS, REGFAILURE, GET_USER_REQUEST, GET_USER_SUCCESS, GET_USER_FAILURE, IS_AUTH} from './actionTypes'
+import {REGREQUEST, REGSUCCESS, REGFAILURE, GET_USER_REQUEST, GET_USER_SUCCESS, GET_USER_FAILURE, IS_AUTH, USER_DATA, LOGIN_USER} from './actionTypes'
 
 const initState = {
     isLoading: false,
     isError: false,
     isRegister: false,
     data: [],
-    isAuthVal: false
+    isAuthVal: false,
+    loginUser:""
 }
 
 export const registerReducer = (state = initState, {type, payload}) => {
@@ -20,7 +21,8 @@ export const registerReducer = (state = initState, {type, payload}) => {
             return {
                 ...state,
                 isLoading: false,
-                isRegister: true
+                isRegister: true,
+                data:[...state.data, payload]
             }
         case REGFAILURE:
             return {
@@ -49,6 +51,11 @@ export const registerReducer = (state = initState, {type, payload}) => {
                     ...state,
                     isAuthVal: payload
                 }
+        case LOGIN_USER:
+            return {
+                ...state,
+                loginUser: payload
+            }
         default:
             return state
     }

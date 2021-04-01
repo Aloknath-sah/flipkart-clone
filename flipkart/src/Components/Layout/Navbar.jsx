@@ -7,6 +7,7 @@ import Login from '../Pages/Login/Login';
 import Register from '../Pages/Register/Register';
 import IconButton from '@material-ui/core/IconButton';
 import { useSelector } from 'react-redux';
+import { isAuth } from '../../Redux/Register/action';
 
 const StyledBadge = withStyles((theme) => ({
     badge: {
@@ -79,6 +80,9 @@ const Navbar = () => {
     const isRegister = useSelector(state => state.register.isRegister)
     const cartLength = useSelector(state => state.product.cart).length
     const isAuthVal = useSelector(state => state.register.isAuthVal)
+    let loginUser = useSelector(state => state.register.loginUser)
+    loginUser = loginUser.split("@")
+    const userName = loginUser[0]
 
     return (
         <NavbarWrapper className="wrapper">
@@ -90,8 +94,16 @@ const Navbar = () => {
             </NavbarLeft>
             
             <NavbarRight className="navright">
-                {
+                {/* {
                     isAuthVal?<div>my account</div>: isRegister?<Login/>:<Register/>
+                } */}
+                <div >
+                {
+                    isAuthVal?<div>hello {userName}</div>:<Login/>
+                }
+                </div>
+                {
+                    isAuthVal?<></>:isRegister?<div></div>:<Register/>
                 }
                 
                 <div>More</div>

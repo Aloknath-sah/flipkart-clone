@@ -1,12 +1,13 @@
-import {REGREQUEST, REGSUCCESS, REGFAILURE, GET_USER_REQUEST, GET_USER_SUCCESS, GET_USER_FAILURE, IS_AUTH} from './actionTypes'
+import {REGREQUEST, REGSUCCESS, REGFAILURE, GET_USER_REQUEST, GET_USER_SUCCESS, GET_USER_FAILURE, IS_AUTH, USER_DATA, LOGIN_USER} from './actionTypes'
 import axios from 'axios'
 
 export const regRequest = () => ({
     type: REGREQUEST
 })
 
-export const regSuccess = () => ({
+export const regSuccess = (payload) => ({
     type: REGSUCCESS,
+    payload
 })
 
 export const regFailure = () => ({
@@ -27,7 +28,7 @@ export const registerData = (payload) => dispatch => {
     })
     .then(res => {
         dispatch(getUserData())
-        dispatch(regSuccess())})
+        dispatch(regSuccess(res.data))})
     .then(err => dispatch(regFailure(err)))
 
 }
@@ -57,8 +58,12 @@ export const getUserData = () => dispatch => {
 
 }
 
-
 export const isAuth = (payload) => ({
     type:IS_AUTH,
+    payload
+})
+
+export const loginUser = (payload) => ({
+    type: LOGIN_USER,
     payload
 })
