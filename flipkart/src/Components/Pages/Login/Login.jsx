@@ -3,6 +3,7 @@ import { makeStyles, TextField } from '@material-ui/core';
 import Modal from '@material-ui/core/Modal';
 import { useDispatch, useSelector } from 'react-redux';
 import { isAuth, loginUser } from '../../../Redux/Register/action';
+import styles from './Login.module.css'
 
 function rand() {
     return Math.round(Math.random() * 20) - 10;
@@ -111,7 +112,7 @@ const Login = () => {
     );
     return (
         <div>
-            <button type="button" onClick={handleOpen} style={{color:"#2874f0", border:"none", width:"200%"}}>
+            <button type="button" onClick={handleOpen} className={styles.login} style={{color:"#2874f0"}}>
                 Login
             </button>
             <Modal

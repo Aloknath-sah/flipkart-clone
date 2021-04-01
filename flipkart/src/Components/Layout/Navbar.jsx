@@ -26,6 +26,7 @@ const NavbarWrapper = styled.div`
     top:0;
     height: 10%;
     display:flex;
+    padding-right: 5%;
     &.wrapper > * {
         flex:1;
     }
@@ -35,11 +36,11 @@ const NavbarWrapper = styled.div`
     }
 
     @media screen and (min-width: 480px) {
-        height: 5%;
+        height: 10%;
     }
 
     @media screen and (min-width: 600px) {
-        height: 5%;
+        height: 6%;
     }
 
     @media screen and (min-width: 930px) {
@@ -47,7 +48,7 @@ const NavbarWrapper = styled.div`
     }
 
     @media screen and (min-width: 1025px) {
-        height: 10%;
+        height: 11%;
     }
 `
 
@@ -60,39 +61,61 @@ const NavbarLeft = styled.div`
         color: #007367;
     }
     input{
-        width: 100%
+        width: 100%;
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 300px) {
         margin-left: 0%;
+        margin-top:2%;
+        
         input{
             width: 100%;
             font-size: 10px;
             height: 95%;
+            
+        }
+    }
+
+    @media screen and (min-width: 480px) {
+        margin-left: 0%;
+        margin-top:0%;
+        
+        input{
+            width: 100%;
+            font-size: 10px;
+            height: 95%;
+            
+            
         }
     }
 
     @media (max-width: 600px) {
         margin-left: 0%;
+        margin-top:0%;
         input{
             width: 100%;
             font-size: 10px;
-            height: 65%;
+            height: 95%;
+            
         }
     }
     @media (max-width: 930px) {
         margin-left: 0%;
+        margin-top:0%;
         input{
             width: 100%;
-            font-size: 10px;
-            height: 85%;
+            font-size: 20px;
+            height: 95%;
+            
         }
     }
     @media (max-width: 1025px) {
         margin-left: 0%;
+        margin-top:0%;
         input{
             width: 100%;
-            font-size: 10px;
-            height: 45%;
+            font-size: 25px;
+            height: 90%;
+            
         }
     }
 `
@@ -108,6 +131,9 @@ const NavbarRight = styled.div`
     }
     &.navright > * > * {
         color: white;
+    }
+    &.navright > .more{
+        margin-left: 10%;
     }
 `
 
@@ -138,7 +164,7 @@ const Navbar = () => {
                     isAuthVal?<></>:isRegister?<div></div>:<Register/>
                 }
                 
-                <div>More</div>
+                <div className="more" >More</div>
                 
                 <Link to="/cart/cartData">
                 <IconButton aria-label="cart" style={{marginTop:"-12px"}} >
@@ -146,7 +172,6 @@ const Navbar = () => {
                         <ShoppingCartIcon />
                     </StyledBadge>
                 </IconButton>
-                    Cart
                 </Link>
                 
             </NavbarRight>
