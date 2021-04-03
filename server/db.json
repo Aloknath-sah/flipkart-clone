@@ -201,6 +201,7 @@
         "img":"https://rukminim1.flixcart.com/image/312/312/kfbfr0w0/mobile/f/x/r/poco-x3-mzb07z2in-original-imafvt3hz54npsba.jpeg?q=70",
         "category":"mobile",
         "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+        "device_ram":3,
         "offers": [
           {
             "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
@@ -211,7 +212,8 @@
         ],
         "features":[
           {
-            "feature1":"6 GB RAM | 128 GB ROM | Expandable upto 512 GB",
+            
+            "feature1":"3 GB RAM | 128 GB ROM | Expandable upto 512 GB",
             "feature2":"16.94 cm Full HD+ Display",
             "feature3":"64 MP + 13 MP + 2MP + 2MP | 20MP Front Camera",
             "feature4":"6000 mAh Lithium-ion Polymer Battery",
@@ -224,12 +226,13 @@
       {
         "id":12,
         "product_name":"POCO M3(Power Black, 128 GB)",
-        "rating": "4.8",
+        "rating": "3.8",
         "price": "11099",
         "original_price": "14000",
         "img":"https://rukminim1.flixcart.com/image/312/312/kklhbbk0/mobile/m/s/f/m3-mzb0879in-poco-original-imafzxf686qtxq2x.jpeg?q=70",
         "category":"mobile",
         "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+        "device_ram":4,
         "offers": [
           {
             "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
@@ -240,7 +243,8 @@
         ],
         "features":[
           {
-            "feature1":"6 GB RAM | 128 GB ROM | Expandable upto 512 GB",
+            
+            "feature1":"4 GB RAM | 128 GB ROM | Expandable upto 512 GB",
             "feature2":"16.94 cm Full HD+ Display",
             "feature3":"64 MP + 13 MP + 2MP + 2MP | 20MP Front Camera",
             "feature4":"6000 mAh Lithium-ion Polymer Battery",
@@ -253,12 +257,13 @@
       {
         "id":13,
         "product_name":"POCO C3(Arctic Blue, 128 GB)",
-        "rating": "4.3",
+        "rating": "2.3",
         "price": "7999",
         "original_price": "10000",
         "img":"https://rukminim1.flixcart.com/image/312/312/kfvfwy80/mobile/j/h/t/poco-c3-mzb07riin-original-imafw8qbg63kvngr.jpeg?q=70",
         "category":"mobile",
         "logo": "https://rukminim1.flixcart.com/www/36/36/promos/06/09/2016/c22c9fc4-0555-4460-8401-bf5c28d7ba29.png?q=90",
+        "device_ram":6,
         "offers": [
           {
             "offers1": "Special PriceGet extra ₹130 off (price inclusive of discount)T&C",
@@ -269,6 +274,7 @@
         ],
         "features":[
           {
+            
             "feature1":"6 GB RAM | 128 GB ROM | Expandable upto 512 GB",
             "feature2":"16.94 cm Full HD+ Display",
             "feature3":"64 MP + 13 MP + 2MP + 2MP | 20MP Front Camera",
@@ -456,7 +462,7 @@
       {
         "id":20,
         "product_name":"killer Slim Men Black Jeans",
-        "rating": "4.3",
+        "rating": "3.3",
         "price": "1249",
         "original_price": "1500",
         "img":"https://rukminim1.flixcart.com/image/496/595/kmccosw0/jean/e/o/j/32-8063-cps-shavv-killer-original-imagf9qfaqhtwchh.jpeg?q=50",
@@ -485,7 +491,7 @@
       {
         "id":21,
         "product_name":"realme 80 cm (32 inch) HD Ready LED Smart Android TV",
-        "rating": "4.8",
+        "rating": "2.8",
         "price": "13949",
         "original_price": "15000",
         "img":"https://rukminim1.flixcart.com/image/312/312/kae95e80/television/f/6/y/realme-tv-32-original-imafrz79pweqeafh.jpeg?q=70",
@@ -515,7 +521,7 @@
       {
         "id":22,
         "product_name":"Mi 4A PRO 80 cm (32 inch) HD Ready LED Smart Android TV with Google Data Saver",
-        "rating": "4.4",
+        "rating": "1.4",
         "price": "14449",
         "original_price": "16000",
         "img":"https://rukminim1.flixcart.com/image/312/312/kc54ivk0/television/r/q/g/mi-l43m4-4ain-original-imaftc5fy6bfmhyb.jpeg?q=70",

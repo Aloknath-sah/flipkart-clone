@@ -78,6 +78,11 @@
     margin-left: 10px;
 }
 
+.checkbox > button {
+    border: none;
+    padding: 4%;
+}
+
 .checkbox > * {
     margin-left: 10px;
 }
