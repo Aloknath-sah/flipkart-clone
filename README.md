@@ -1,5 +1,5 @@
 # flipkart-clone
-### I have cloned flipkart website and added features like routing, add to cart, etc.
+### I have cloned flipkart website and added features like routing, add to cart, filter, sorting etc.
 
 ## HOME PAGE
 ![flipkart_home](https://user-images.githubusercontent.com/63871069/112047276-1719d180-8b73-11eb-88e1-cf6ea85334cf.png)
